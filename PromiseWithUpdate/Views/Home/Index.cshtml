@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div ng-controller="updateController">
+    <div>
+        <hr />
+        <h3>Property returns value only during initial load</h3>
+        <br />
+        <div>{{serverTimeProperty}}</div>
+        <br />
+        <button ng-click="getServerTimeProperty()">refresh some data from Property</button>
+    </div>
+    <div>
+        <hr />
+        <h3>Function returns value during refresh only if result comes back before $diagest completes</h3>
+        <br />
+        <div>{{serverTimeFunction}}</div>
+        <br />
+        <button ng-click="getServerTimeFunction()">refresh some data from Function</button>
+    </div>
+    @*<div>
+        <hr />
+        <h3>Delayed service call will not refresh due to delay</h3>
+        <br />
+        <div>{{serverDelayResponse}}</div>
+        <br />
+        <button ng-click="getServerDelayResponse()">refresh dalayed data</button>
+    </div>*@
+    @*<div>
+        <hr />
+        <h3>Delayed service call will refresh due to delay being passed as function()</h3>
+        <br />
+        <div>{{serverDelayResponseFunction}}</div>
+        <br />
+        <button ng-click="getServerDelayResponseFunction()">refresh dalayed data as function</button>
+    </div>*@
+    <div>
+        <hr />
+        <h3>Call to secondary service/factory with explicit promise object will refresh</h3>
+        <br />
+        <div>{{serverDelayPromiseResponse}}</div>
+        <br />
+        <button ng-click="getServerDelayPromiseResponse()">refresh dalayed data</button>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div ng-controller='Secctrlr' style="border: solid green 3px; margin:5px; padding: 10px;">
+    <h3>Inheriting Controller scope </h3>
+    <hr>    
+    <div>
+        <h3>Base values and functionality, Base Controller scope </h3>
+        <label>Base header text : </label> <span>{{parentHeaderText}}</span><br />
+        <label>Base value : </label> <span>{{parentValue}}</span><br />
+        <label>Base value edit : </label> <input type="number" ng-model="parentValue"><br />
+        <label>Base function button: </label> <button ng-click='parentFunction()'>Trigger Base Function</button><br />
+        <label>Base function output : </label> <span>{{parentMessage}}</span><br /> 
+    </div>
+    <hr>
+    <div>
+        <h3>Custom values and functionality, Inheriting Controller scope </h3>
+        <label>Custom header text : </label> <span>{{customHeaderText}}</span><br />
+        <label>Custom value : </label> <span>{{customValue}}</span><br />
+        <label>Custom value edit : </label> <input type="number" ng-model="customValue"><br />
+        <label>Custom function button: </label> <button ng-click='customFunction()'>Trigger Custom Function</button><br />
+        <label>Custom function output : </label> <span>{{customMessage}}</span><br /> 
+
+        <label>Master Controller refrenced message : </label> <span>{{simpleInheritance}}</span><br />   
+        <label>Master Controller direclty accessed message : </label> <span>{{masterControllerMessage}}</span><br />   
+
+    </div>
+    <hr>
+    <div>
+        <h3>Combined values and functionality </h3>
+        <label>Combined header text : </label> <span>{{combinedHeaderText}}</span><br />
+        <label>Combined value : </label> <span>{{combinedValue}}</span><br />
+        <label>Combined value edit : </label> <input type="number" ng-model="combinedValue"><br />
+        <label>Combined function button: </label> <button ng-click='combinedFunctions()'>Trigger Both Functions</button><br />
+        <label>Combined function output : </label> <span>{{combinedMessages}}</span><br /> 
+    </div>
+</div>  
