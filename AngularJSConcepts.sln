@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_PromiseWithUpdate", "Prom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_uiRouter", "5_uiRouter\5_uiRouter.csproj", "{3BAF4CB5-D02C-4CCB-9928-C1DD0D34B06C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncTabLoading", "AsyncTabLoading\AsyncTabLoading.csproj", "{69723C7B-1398-4BD5-BDE5-C7052CF93EE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3BAF4CB5-D02C-4CCB-9928-C1DD0D34B06C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BAF4CB5-D02C-4CCB-9928-C1DD0D34B06C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BAF4CB5-D02C-4CCB-9928-C1DD0D34B06C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69723C7B-1398-4BD5-BDE5-C7052CF93EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69723C7B-1398-4BD5-BDE5-C7052CF93EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69723C7B-1398-4BD5-BDE5-C7052CF93EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69723C7B-1398-4BD5-BDE5-C7052CF93EE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
